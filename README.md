@@ -3,8 +3,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/cleemullins/SemverTesting/badge.svg?branch=master)](https://coveralls.io/github/cleemullins/SemverTesting?branch=master)
 
 # CI/CD Builds
-The VSO Build system drops NuGet packages to MyGet [MyGet Semver Package Feed](https://botbuilder.myget.org/feed/Packages/semvertesting)
+The Azure DevOps build system drops NuGet packages to MyGet [MyGet Semver Package Feed](https://botbuilder.myget.org/feed/Packages/semvertesting)
 Note: This is a private feed for testing, that only I have access to. 
+
+# Code Coverage
+This project is integrated with Coveralls through the Azure DevOps build. Both **master** and Pull Requests trigger builds that drive the Code Coverage system. In theory, external / forked pull requests should also build and go through the same pipeline. 
 
 # SemverTesting
 Experiments with Semver, C#, Visual Studio Online CI/CD, MyGet, and NuGet deployments
